@@ -61,6 +61,7 @@ Functionality:
      VAOR02
      VAOR03
      VAOR04
-
+password : password 
+for all the users
 
    

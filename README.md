@@ -49,12 +49,12 @@ Functionality:
 
   Managers:
 
-   alice@example.com
-   bob@example.com
+   alice@example.com (alice (id = 1)
+   bob@example.com   (bob id = 2)
 
    Workers:
-    charlie@example.com
-    dan@example.com
+    charlie@example.com (id =  1, manager = alice (id = 1))
+    dan@example.com  (id = 2, manager = bob(id =2))
 
    Jobs:
      VAOR01

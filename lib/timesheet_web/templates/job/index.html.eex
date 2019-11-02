@@ -1,0 +1,28 @@
+<h1>Available Jobs</h1>
+<span><%= link "My Home", to: Routes.worker_path(@conn, :index) %></span>
+
+<table class = "table table-dark">
+  <thead>
+    <tr>
+      <th>Jobcode</th>
+      <th>Budget</th>
+      <th>Name</th>
+      <th>Description</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for job <- @jobs do %>
+    <tr>
+      <td><%= job.jobcode %></td>
+      <td><%= job.budget %></td>
+      <td><%= job.name %></td>
+      <td><%= job.description %></td>
+
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+

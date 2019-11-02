@@ -1,0 +1,9 @@
+/* This file is for your main application css. */
+
+$body-bg: lightblue; // With scss, Bootstrap lets us override colors and stuff.
+@import "~bootstrap/scss/bootstrap";
+
+
+.row{
+    margin-top: 5%;
+}

@@ -1,0 +1,16 @@
+<h1>Listing Workers</h1>
+(<span><%= link("Sign Out", to: Routes.sessionworker_path(@conn, :delete),
+              method: :delete) %>)</span>
+              
+<h2>View Available Jobs</h2>
+
+<span><%= link "View Jobs", to: Routes.job_path(@conn, :index) %></span>
+
+
+<h2>Submit Timesheets for the Employees</h2>
+
+<span><%= link "Submit Timesheets", to: Routes.task_path(@conn, :new) %></span>
+
+
+<h2>Check Timesheets  Status </h2>
+<span><%= link "Check Timesheet Status", to: Routes.task_path(@conn, :timesheetStatus) %></span>

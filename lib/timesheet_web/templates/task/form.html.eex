@@ -1,0 +1,93 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+
+<table class="table table-dark table-bordered">
+  <thead>
+    <tr>
+      <th>Job</th>
+      <th>Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+      <%= text_input f, :job_id, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours, class: "form-control" %>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <%= text_input f, :job_id1, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours1, class: "form-control" %>
+  </td>
+  </tr>
+    <tr>
+  <td>
+      <%= text_input f, :job_id2, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours2, class: "form-control" %>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <%= text_input f, :job_id3, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours3, class: "form-control" %>
+  </td>
+  </tr>
+    <tr>
+  <td>
+      <%= text_input f, :job_id4, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours4, class: "form-control" %>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <%= text_input f, :job_id5, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours5, class: "form-control" %>
+  </td>
+  </tr>
+    <tr>
+  <td>
+      <%= text_input f, :job_id6, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours6, class: "form-control" %>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <%= text_input f, :job_id7, class: "form-control"%>
+  </td>
+  <td>
+       <%= number_input f, :hours7, class: "form-control" %>
+  </td>
+  </tr>
+  </tbody>
+ </table> 
+
+  <div class = "form-group">
+     <%= label f, :note, class: "label-primary"  %>
+     <%= text_input f, :note, class: "form-control"  %>
+     <%= error_tag f, :note %>
+  </div>  
+
+  <div class = "form-group">
+    <%= submit "Save", class: "btn btn-primary"%>
+  </div>
+<% end %>

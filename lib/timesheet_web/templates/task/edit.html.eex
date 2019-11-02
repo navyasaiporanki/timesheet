@@ -1,0 +1,5 @@
+<h2>Approve Task</h2> <span><%= link "Back", to: Routes.task_path(@conn, :index) %></span>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.task_path(@conn, :update, @task)) %>
+
+

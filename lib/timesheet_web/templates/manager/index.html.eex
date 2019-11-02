@@ -1,0 +1,15 @@
+
+<h2> Managers Home Page</h2>
+(<span><%= link("Sign Out", to: Routes.sessionmanager_path(@conn, :delete),
+              method: :delete) %>)</span>
+
+
+
+<h2>View Jobs for the Employees</h2>
+
+<span><%= link "Add Jobs", to: Routes.job_path(@conn, :new) %></span>
+
+
+<h2>Approve Timesheets for the Employees</h2>
+
+<span><%= link "Approve Timesheets", to: Routes.task_path(@conn, :index) %></span>

@@ -1,0 +1,34 @@
+
+<h2>Timesheet Status</h2>
+(<span><%= link("Sign Out", to: Routes.sessionworker_path(@conn, :delete),method: :delete) %>)</span>
+              
+<span><%= link "My Home", to: Routes.worker_path(@conn, :index) %></span>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      
+      <th>Job</th>
+      <th>Hours</th>
+      <th>Worker ID</th>
+      <th>Status </th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for task <- @tasks do %>
+<%= if task.worker_id == @current_user.id do %>
+    <tr>
+      <td><%= task.job_id %></td>
+      <td><%= task.hours %></td>
+      <td><%= task.worker_id  %></td>
+      <%= if task.approved == true do %>
+         <td>Approved</td>
+      <% else %>
+         <td>Not Approved</td>
+      <% end %>   
+   
+    </tr>
+<% end %>    
+<% end %>
+  </tbody>
+</table>
+

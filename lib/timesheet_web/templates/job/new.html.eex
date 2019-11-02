@@ -1,0 +1,7 @@
+<h1>New Job</h1>
+
+<span><%= link "My Home", to: Routes.manager_path(@conn, :index) %></span> (<span><%= link("Sign Out", to: Routes.sessionmanager_path(@conn, :delete),
+              method: :delete) %>)</span>
+<%= render "form.html", Map.put(assigns, :action, Routes.job_path(@conn, :create)) %>
+
+

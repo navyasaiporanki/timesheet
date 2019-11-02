@@ -13,7 +13,7 @@ Answer the following questions:
     https://github.com/navyasaiporanki/timesheet.git
 
 3. What's the version number of your github release?
-      release 1 
+      release 1 (version 1, v1.0)
 
 
 4. What's the URL that you deployed to?

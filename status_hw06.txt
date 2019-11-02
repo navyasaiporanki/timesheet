@@ -5,7 +5,7 @@ Answer the following questions:
 
 
 1. What's your name?
-		Navyasai
+		Navyasai Poranki
 
 
 2. What's the URL of the github repo with your work for this HW?
@@ -13,7 +13,7 @@ Answer the following questions:
     https://github.com/navyasaiporanki/timesheet.git
 
 3. What's the version number of your github release?
-      version 1
+      release 1 
 
 
 4. What's the URL that you deployed to?
